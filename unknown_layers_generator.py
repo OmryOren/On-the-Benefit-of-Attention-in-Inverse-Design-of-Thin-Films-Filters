@@ -249,65 +249,6 @@ def plots1000(materials_dict, num=1000):
 
     outfile = 'correls2'
     np.savez(outfile, T_histogram=a, R_histogram=b, T_matrix=mat_t, R_matrix=mat_r)
-
-    # v = np.argwhere((mat_r > 0.9) & (mat_r < 0.95))
-    # print(len(v))
-    # plt.figure()
-    # plt.subplot(6, 2, 1)
-    # t1, y1 = non_zero(t_vec, vec_of_vectors_r[v[0][0]])
-    # plt.plot(t1, y1)
-    # plt.subplot(6, 2, 2)
-    # t2, y2 = non_zero(t_vec, vec_of_vectors_r[v[0][1]])
-    # plt.plot(t2, y2)
-    # # plt.subplot(6, 2, 3)
-    # # t3, y3 = non_zero(t_vec, vec_of_vectors_r[v[2][0]])
-    # # plt.plot(t3, y3)
-    # # plt.subplot(6, 2, 4)
-    # # t4, y4 = non_zero(t_vec, vec_of_vectors_r[v[2][1]])
-    # # plt.plot(t4, y4)
-    # # plt.subplot(6, 2, 5)
-    # # t5, y5 = non_zero(t_vec, vec_of_vectors_r[v[4][0]])
-    # # plt.plot(t5, y5)
-    # # plt.subplot(6, 2, 6)
-    # # t6, y6 = non_zero(t_vec, vec_of_vectors_r[v[4][1]])
-    # # plt.plot(t6, y6)
-    # v = np.argwhere((mat_r > 0.05) & (mat_r < 0.1))
-    # print(len(v))
-    # plt.subplot(6, 2, 7)
-    # t1, y1 = non_zero(t_vec, vec_of_vectors_r[v[0][0]])
-    # plt.plot(t1, y1)
-    # plt.subplot(6, 2, 8)
-    # t2, y2 = non_zero(t_vec, vec_of_vectors_r[v[0][1]])
-    # plt.plot(t2, y2)
-    # plt.subplot(6, 2, 9)
-    # t3, y3 = non_zero(t_vec, vec_of_vectors_r[v[2][0]])
-    # plt.plot(t3, y3)
-    # plt.subplot(6, 2, 10)
-    # t4, y4 = non_zero(t_vec, vec_of_vectors_r[v[2][1]])
-    # plt.plot(t4, y4)
-    # # plt.subplot(6, 2, 11)
-    # # t5, y5 = non_zero(t_vec, vec_of_vectors_r[v[4][0]])
-    # # plt.plot(t5, y5)
-    # # plt.subplot(6, 2, 12)
-    # # t6, y6 = non_zero(t_vec, vec_of_vectors_r[v[4][1]])
-    # # plt.plot(t6, y6)
-    # # t1, y1 = non_zero(t_vec, vec_of_vectors_r[v[3][0]])
-    # # plt.plot(t1, y1)
-    # # plt.subplot(6, 2, 8)
-    # # t2, y2 = non_zero(t_vec, vec_of_vectors_r[v[3][1]])
-    # # plt.plot(t2, y2)
-    # # plt.subplot(6, 2, 9)
-    # # t3, y3 = non_zero(t_vec, vec_of_vectors_r[v[4][0]])
-    # # plt.plot(t3, y3)
-    # # plt.subplot(6, 2, 10)
-    # # t4, y4 = non_zero(t_vec, vec_of_vectors_r[v[4][1]])
-    # # plt.plot(t4, y4)
-    # # plt.subplot(6, 2, 11)
-    # # t5, y5 = non_zero(t_vec, vec_of_vectors_r[v[5][0]])
-    # # plt.plot(t5, y5)
-    # # plt.subplot(6, 2, 12)
-    # # t6, y6 = non_zero(t_vec, vec_of_vectors_r[v[5][1]])
-    # # plt.plot(t6, y6)
     plt.show()
 
 def generate_vector_par(NDlist, materials_dict):
@@ -756,7 +697,7 @@ def pulse_plots(materials_dict, NDlist):
 #######################################################################
 
 if __name__ == '__main__':
-    materials_dict = materials("materials2.csv")
+    materials_dict = materials("materials.csv")
     NDlist = random_NDlist(materials_dict)
     print(NDlist)
 
@@ -764,7 +705,7 @@ if __name__ == '__main__':
 
     #generate_pulse(NDlist, materials_dict)
 
-    plots1000(materials_dict)
+    #plots1000(materials_dict)
 
     #examples(materials_dict)
 
