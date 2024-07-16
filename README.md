@@ -13,13 +13,17 @@ The superiority of Attention layers over fully-connected Deep Neural Networks is
   - Copy `materials.csv` to the same directory as the code file.
   - Run the code to generate the dataset of random filters. Set the number of samples by specifying the input `num` in the `examples(materials_dict, num)` function.
 
-2. **DNN & Transformer Models:**
-  - DNN: Open `5_layers_DNN_model.ipynb` (for datasets with 5 layers per sample) or `unknown_layers_DNN_model.ipynb` (for datasets with an unknown number of layers between 3-5 per sample).
-  - Transformer :Open `5_layers_transformer_model.ipynb` (for datasets with 5 layers per sample) or `unknown_layers_transformer_model.ipynb` (for datasets with an unknown number of layers between 3-5 per sample).
+2. **DNN Model:**
+  - Open `5_layers_DNN_model.ipynb` (for datasets with 5 layers per sample) or `unknown_layers_DNN_model.ipynb` (for datasets with an unknown number of layers between 3-5 per sample).
+  - Save the dataset in Google Drive and ensure that all data file names match the names used in these codes.
+  - Run all the cells in the notebook sequentially.
+
+3. **Transformer Model:**
+  - Open `5_layers_transformer_model.ipynb` (for datasets with 5 layers per sample) or `unknown_layers_transformer_model.ipynb` (for datasets with an unknown number of layers between 3-5 per sample).
   - Update the `files_path` variable at the top of the file to point to the dataset directory, and change the `new_data_files_path` variable to the desired results directory.
   - Run all the cells in the notebook sequentially.
 
-3. **Figure Codes:**
+4. **Figure Codes:**
   - The files `Figure_Code-Attention_Scores.py`, `Figure_Code-Multiple_Runnings_Histogram.py`, and `Figure_Code-Waves_Graphs.py` are used to process the data from the result files of the model and generate the figures for the paper.
   - To run these codes, save all result files from the DNN models and Transformer models codes in a directory and update the `data_folder` variable to point to that directory.
   - Update the `output_folder` variable to point to the directory where the figures will be saved.
