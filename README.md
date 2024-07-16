@@ -9,4 +9,5 @@ The superiority of Attention layers over fully-connected Deep Neural Networks is
 ## Usage Instructions
 1. **Generate Dataset:**
   - Open the file named `5_layers_data_generator.py` (for dataset of 5 layers in each sample) or the file named `unknown_layers_data_generator.py` (for dataset of unknown amount of layers between 3-5 in each sample).
-  - Run this code to generate dataset. To set the amount of samples you can set the input `num` of the function `examples(materials_dict, num)`.
+  - Copy the file `maretials.csv` to the same directiry as the code file.
+  - Run this code to generate the dataset of random filters, and set the amount of samples by setting the input `num` of the function `examples(materials_dict, num)`.
