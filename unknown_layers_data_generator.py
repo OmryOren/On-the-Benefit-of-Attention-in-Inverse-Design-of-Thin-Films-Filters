@@ -707,6 +707,6 @@ if __name__ == '__main__':
 
     #plots1000(materials_dict)
 
-    #examples(materials_dict)
+    examples(materials_dict)
 
     #coralation_of_data(materials_dict)
