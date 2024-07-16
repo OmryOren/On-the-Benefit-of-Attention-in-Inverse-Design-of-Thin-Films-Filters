@@ -20,6 +20,6 @@ The superiority of Attention layers over fully-connected Deep Neural Networks is
 
 3. **Figure Codes:**
   - The files `Figure_Code-Attention_Scores.py`, `Figure_Code-Multiple_Runnings_Histogram.py`, and `Figure_Code-Waves_Graphs.py` are used to process the data from the result files of the model and generate the figures for the paper.
-  - To run these codes, save all result files from the DNN Model and Transformer Model codes in a directory and update the `data_folder` variable to point to that directory.
+  - To run these codes, save all result files from the DNN models and Transformer models codes in a directory and update the `data_folder` variable to point to that directory.
   - Update the `output_folder` variable to point to the directory where the figures will be saved.
   - For `Figure_Code-Multiple_Runnings_Histogram.py`, each model must be run 10 times with different run numbers from 1 to 10. The `running_number` variable is located at the top of each notebook.
